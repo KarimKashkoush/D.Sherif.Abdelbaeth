@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sherif Abdelbaeth</title>
+    <!-- MDB BootStrap -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <script src="Js/mdb.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- Wow Js Animate css -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="Js/WOW.js"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet" />
+    <!-- css file -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid container">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-3 mt-lg-0 text-danger text-capitalize fw-bolder" href="index.html">
+                    d. sherif abdelbaeth
+                </a>
+                <!-- Left links -->
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize fw-bold" href="index.html">home</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- Icon -->
+                <a class="text-reset me-3" href="http://wa.me/+201012123720" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class="text-reset me-3" href="https://www.facebook.com/sherif.abdelbaeth.9" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="text-reset me-3" href="https://www.instagram.com/sherif_abdelbaeth/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <div class="reset">
+        <div class="container">
+            <div class="box">
+                <h2>duration</h2>
+                <p>2 month</p>
+            </div>
+            <div class="box">
+                <h2>Number of classes in week</h2>
+                <p>40</p>
+            </div>
+            <div class="box">
+                <h2>the price</h2>
+                <p>2000 EGP</p>
+            </div>
+            <div class="box">
+                <h2>Discount</h2>
+                <p>-800 EGP</p>
+            </div>
+            <div class="box total">
+                <h2>total</h2>
+                <p>1200 EGP</p>
+            </div>
+            <button class="btn-pay" onclick="show_pup()">pay 1200EGP</button>
+            <div class="pup" id="pup">
+                <img src="images/vodafone.png" alt="">
+                <h2>01012123720</h2>
+                <p>Send the payment receipt on <span><a href="http://wa.me/+201012123720" target="_blank">WhatsApp</a></span></p>
+                <button class="btn-close" onclick="hide_pup()"></button>
+            </div>
+            <p>Send the payment receipt on <span><a href="http://wa.me/+201012123720" target="_blank">WhatsApp</a></span></p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer bg-light">
+        <div class="container">
+            <footer class="footer text-center text-lg-start text-muted">
+                <!-- Section: Social media -->
+                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                    <!-- Left -->
+                    <div class="me-5 d-none d-lg-block">
+                        <span>Get connected with us on social networks:</span>
+                    </div>
+                    <!-- Left -->
+                    <!-- Right -->
+                    <div>
+                        <a href="https://www.facebook.com/sherif.abdelbaeth.9" target="_blank" class="me-4 text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sherif_abdelbaeth/" target="_blank" class="me-4 text-reset">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="http://wa.me/+201012123720" target="_blank"
+                            href="https://www.facebook.com/sherif.abdelbaeth.9" target="_blank" class="text-reset">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <!-- Right -->
+                </section>
+                <!-- Section: Social media -->
+                <!-- Section: Links  -->
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <!-- Content -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    <i class="fas fa-gem me-3"></i>D. Sherif Abdelbaeth
+                                </h6>
+                                <p>
+                                    We are committed to helping people reach their fitness
+                                    goals. We vary their programs and services to suit your
+                                    needs, whether you're an experienced athlete.
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                                <p><i class="fas fa-home me-3"></i> egypt</p>
+                                <p>
+                                    <i class="fas fa-envelope me-3"></i>
+                                    sherifbaeth1@gmail.com
+                                </p>
+                                <p><i class="fas fa-phone me-3"></i> +201012123720</p>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </section>
+                <!-- Section: Links  -->
+                <!-- Copyright -->
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+                    © 2023 Copyright:
+                    <a class="text-reset fw-bold" href="https://github.com/KarimKashkoush">Karim Kashkoush
+                    </a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+        </div>
+    </div>
+    <!-- Footer -->
+
+    <script>
+        function show_pup() {
+            document.getElementById("pup").classList.add('open');
+        }
+        function hide_pup() {
+            document.getElementById("pup").classList.remove('open');
+        }
+    </script>
+</body>
+
+</html>
