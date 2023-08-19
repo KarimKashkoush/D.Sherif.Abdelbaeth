@@ -65,13 +65,14 @@ a, img {
 .up {
     border: 0;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     background-color: var(--bg-color-3);
     color: var(--white-color);
     padding: 10px;
     border-radius: 5px;
     font-size: 20px;
+    object-fit: contain;
 }
 /* up */
 /* Start Nav */
