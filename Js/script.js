@@ -12,3 +12,11 @@ up.onclick = function() {
     scroll(0, 0)
 }
 // up
+
+// loading
+    var loader = document.getElementsByClassName("preloader");
+
+    window.addEventListener("load", function() {
+        loader.style.display = "none";
+    })
+// loading

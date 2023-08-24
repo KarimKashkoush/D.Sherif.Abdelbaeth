@@ -17,6 +17,14 @@
     margin: 0;
     text-decoration: none;
 }
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    background-color: var(--main-color);
+}
 body {
     scroll-behavior: smooth;
     font-family: 'Cairo', sans-serif;
@@ -61,10 +69,20 @@ a, img {
 .navbar-brand {
     color: var(--main-color);
 }
+/* loading */
+#preloader {
+    background-color: var(--sub-color);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+/* loading */
 /* up */
 .up {
     border: 0;
     position: fixed;
+    z-index: 10;
     bottom: 20px;
     right: 20px;
     background-color: var(--bg-color-3);
@@ -98,8 +116,23 @@ a, img {
 /* Landing */
 .landing {
     background-color: var(--bg-color-2);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 3;
+}
+.landing video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 @media (max-width: 800px) {
+    .landing video {
+        display: none;
+    }
     .landing {
         background-image: url(../images/WhatsApp\ Image\ 2023-08-19\ at\ 02.51.57.jpg);
         background-repeat: no-repeat;
@@ -129,6 +162,8 @@ a, img {
     text-align: center;
     color: var(--white-color);
     text-transform: capitalize;
+    position: relative;
+    z-index: 2;
 }
 .landing .container .text h2 {
     font-size: 35px;
@@ -207,6 +242,10 @@ a, img {
 .about .container .image {
     flex: 1;
     position: relative;
+    padding-inline: 10px;
+}
+.about .container .image img {
+    width: 100%;
 }
 .about .container .image::after {
     content: "";
@@ -278,35 +317,6 @@ a, img {
     .about .container {
         flex-direction: column;
         text-align: center;
-    }
-    .about .container .image {
-        padding-block: 15px;
-        margin-bottom: 20px;
-    }
-    .about .container .image::before {
-        left: 0;
-        top: 0;
-        height: 5px;
-        width: 100%;
-        animation: line 3s linear infinite;
-    }
-    .about .container .image::after {
-        right: 0;
-        bottom: 0;
-        height: 5px;
-        width: 100%;
-        animation: line 3s linear infinite;
-    }
-    @keyframes line {
-        0% {
-            width: 0%;
-        }
-        50% {
-            width: 100%;
-        }
-        100% {
-            width: 0%;
-        }
     }
     .about .container .text h2 {
         font-size: 30px;
@@ -383,6 +393,7 @@ a, img {
 }
 .why .container .image {
     position: relative;
+    padding-inline: 15px;
 }
 .why .container .image::before {
     content: "";
@@ -485,25 +496,6 @@ a, img {
     .why .container {
         flex-direction: column-reverse;
         gap: 60px;
-    }
-    .why .container .image::before {
-        height: 5px;
-        width: 0;
-    }
-    .why .container .image::after {
-        height: 5px;
-        width: 0;
-    }
-    @keyframes linewhy {
-        0% {
-            width: 0%;
-        }
-        50% {
-            width: 100%;
-        }
-        100% {
-            width: 0%;
-        }
     }
 }
 /* why */
@@ -678,6 +670,56 @@ a, img {
     padding-block: var(--padding100);
     background-color: var(--bg-color-2);
 }
+.contact .contact-contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+.contact .contact-contact .image {
+    position: relative;
+    max-width: 400px;
+    padding-inline: 10px;
+}
+.contact .contact-contact .image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    height: 0;
+    width: 5px;
+    transition: var(--transition5);
+    animation: linecontact 3s linear infinite;
+}
+.contact .contact-contact .image::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--main-color);
+    height: 0;
+    width: 5px;
+    transition: var(--transition5);
+    animation: linecontact 3s linear infinite;
+}
+@keyframes linecontact {
+    0% {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+.contact .contact-contact .image img {
+    width: 100%;
+}
+.contact .form {
+    flex: 1;
+}
 .contact .social ul {
     display: flex;
     justify-content: center;
@@ -724,6 +766,14 @@ a, img {
 }
 .contact .form form input[type=submit]:hover {
     box-shadow: 0 0 10px var(--white-color);
+}
+@media (max-width: 991px) {
+    .contact .contact-contact {
+        flex-direction: column-reverse;
+    }
+    .contact .contact-contact .form {
+        width: 100%;
+    }
 }
 /* contact */
 /* -------------------------------------------------- */

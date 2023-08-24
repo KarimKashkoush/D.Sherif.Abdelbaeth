@@ -24,6 +24,7 @@
 </head>
 
 <body>
+  <div class="preloader"></div>
   <button class="up" id="btn-up"><i class="fa-solid fa-arrow-up"></i></button>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -83,12 +84,13 @@
   <!-- Navbar -->
   <!-- Landing -->
   <div class="landing" id="home">
+    <video src="images/landing.mp4" autoplay loop muted></video>
     <div class="container">
       <div class="text">
-        <h2>
+        <h2 class="wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
           get healthy body with the perfect exercises.
         </h2>
-        <p>we are always ther to help you to make a healthy body and mind through the power of fitness.</p>
+        <p class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.3s">we are always ther to help you to make a healthy body and mind through the power of fitness.</p>
         <a href="#plan">get started</a>
         <ul class="iqon">
           <li>
@@ -113,15 +115,15 @@
   <!-- Landing -->
   <!-- Numbers -->
   <div class="numbers">
-    <div class="number wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.3s">
+    <div class="number wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
       <h3>130+</h3>
       <p>expert trainers</p>
     </div>
-    <div class="number wow fadeInDownBig" data-wow-duration="1.5s" data-wow-delay="0.3s">
+    <div class="number wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
       <h3>950+</h3>
       <p>member joined</p>
     </div>
-    <div class="number wow fadeInDownBig" data-wow-duration="2s" data-wow-delay="0.3s">
+    <div class="number wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
       <h3>100+</h3>
       <p>fitness programs</p>
     </div>
@@ -131,12 +133,12 @@
   <div class="about" id="about">
     <div class="container">
       <div class="image">
-        <img src="images/about.png" alt="">
+        <img src="images/IMG_4750.JPG" alt="">
       </div>
       <div class="text wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
-        <h2>get ready to reach your fitness goals.</h2>
-        <p>We are committed to helping people reach their fitness goals. We vary their programs and services to suit your needs, whether you're an experienced athlete.</p>
-        <p>We believe that everyone ahould have access to the benefits of exercise make it happen.</p>
+        <h2 class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.3s">get ready to reach your fitness goals.</h2>
+        <p class="wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">We are committed to helping people reach their fitness goals. We vary their programs and services to suit your needs, whether you're an experienced athlete.</p>
+        <p class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.3s">We believe that everyone ahould have access to the benefits of exercise make it happen.</p>
       </div>
     </div>
   </div>
@@ -196,7 +198,7 @@
         </div>
       </div>
       <div class="image">
-        <img src="images/photo_2023-08-07_18-51-17.jpg" alt="photo" class="shadow-5">
+        <img src="images/IMG_4743.JPG" alt="photo" class="shadow-5">
       </div>
     </div>
   </div>
@@ -207,45 +209,35 @@
       <div class="heading-div">
         <h2>transformations</h2>
       </div>
-      <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-mdb-target="#carouselExampleIndicators"
-            data-mdb-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-mdb-target="#carouselExampleIndicators"
-            data-mdb-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-mdb-target="#carouselExampleIndicators"
-            data-mdb-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
+      <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape"/>
+            <img src="images/transformation-1.jpg" class="d-block w-75 m-auto" alt="Wild Landscape"/>
           </div>
           <div class="carousel-item">
-            <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera"/>
+            <img src="images/transformation-2.jpg" class="d-block w-75 m-auto" alt="Camera"/>
           </div>
           <div class="carousel-item">
-            <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/>
+            <img src="images/transformation-3.jpg" class="d-block w-75 m-auto" alt="Exotic Fruits"/>
+          </div>
+          <div class="carousel-item">
+            <img src="images/transformation-4.jpg" class="d-block w-75 m-auto" alt="Exotic Fruits"/>
+          </div>
+          <div class="carousel-item">
+            <img src="images/transformation-5.jpg" class="d-block w-75 m-auto" alt="Exotic Fruits"/>
+          </div>
+          <div class="carousel-item">
+            <img src="images/transformation-6.jpg" class="d-block w-75 m-auto" alt="Exotic Fruits"/>
+          </div>
+          <div class="carousel-item">
+            <img src="images/transformation-7.jpg" class="d-block w-75 m-auto" alt="Exotic Fruits"/>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -281,7 +273,7 @@
         <div class="tab-content" id="ex2-content">
           <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1">
             <div class="boxs">
-              <div class="box shadow-5 wow slideInDown" data-wow-duration="1.5s" data-wow-delay="0.3s">
+              <div class="box shadow-5 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
                 <h3>1 month</h3>
                 <p>1200 <span>egp</span></p>
                 <p>800 <span>egp</span></p>
@@ -297,11 +289,11 @@
                 <div class="location">
                   <h4>I'm here</h4>
                   <ul>
-                    <li>whatsapp <span>8/24 hr</span></li>
+                    <li>whatsapp <span>7/24 hr</span></li>
                   </ul>
                 </div>
               </div>
-              <div class="box shadow-5 wow slideInDown" data-wow-duration="2s" data-wow-delay="0.3s">
+              <div class="box shadow-5 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
                 <h3>2 month</h3>
                 <p>2000 <span>egp</span></p>
                 <p>1200 <span>egp</span></p>
@@ -317,11 +309,11 @@
                 <div class="location">
                   <h4>I'm here</h4>
                   <ul>
-                    <li>whatsapp <span>8/24 hr</span></li>
+                    <li>whatsapp <span>7/24 hr</span></li>
                   </ul>
                 </div>
               </div>
-              <div class="box shadow-5 wow slideInDown" data-wow-duration="2.5s" data-wow-delay="0.3s">
+              <div class="box shadow-5 wow slideInLeft" data-wow-duration="2.5s" data-wow-delay="0.3s">
                 <h3>3 month</h3>
                 <p>2500 <span>egp</span></p>
                 <p>1500 <span>egp</span></p>
@@ -337,7 +329,7 @@
                 <div class="location">
                   <h4>I'm here</h4>
                   <ul>
-                    <li>whatsapp <span>8/24 hr</span></li>
+                    <li>whatsapp <span>7/24 hr</span></li>
                   </ul>
                 </div>
               </div>
@@ -345,7 +337,7 @@
           </div>
           <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
             <div class="boxs">
-              <div class="box shadow-5 wow slideInDown" data-wow-duration="1.5s" data-wow-delay="0.3s">
+              <div class="box shadow-5 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
                 <h3>20 session</h3>
                 <p>4500 <span>egp</span></p>
                 <p>3000 <span>egp</span></p>
@@ -365,7 +357,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="box shadow-5 wow slideInDown" data-wow-duration="2s" data-wow-delay="0.3s">
+              <div class="box shadow-5 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
                 <h3>40 session</h3>
                 <p>7000 <span>egp</span></p>
                 <p>5000 <span>egp</span></p>
@@ -389,7 +381,7 @@
           </div>
           <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel" aria-labelledby="ex2-tab-3">
             <div class="boxs">
-              <div class="box shadow-5 wow slideInDown" data-wow-duration="1.5s" data-wow-delay="0.3s">
+              <div class="box shadow-5 wow slideInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
                 <h3>1 month</h3>
                 <p>1500 <span>egp</span></p>
                 <p>1000 <span>egp</span></p>
@@ -410,7 +402,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="box shadow-5 wow slideInDown" data-wow-duration="2s" data-wow-delay="0.3s">
+              <div class="box shadow-5 wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
                 <h3>2 month</h3>
                 <p>3000 <span>egp</span></p>
                 <p>1700 <span>egp</span></p>
@@ -431,7 +423,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="box shadow-5 wow slideInDown" data-wow-duration="2.5s" data-wow-delay="0.3s">
+              <div class="box shadow-5 wow slideInLeft" data-wow-duration="2.5s" data-wow-delay="0.3s">
                 <h3>3 month</h3>
                 <p>4500 <span>egp</span></p>
                 <p>2500 <span>egp</span></p>
@@ -472,7 +464,7 @@
                 <h2>ahmed ali</h2>
               </div>
               <div class="text">
-                <h3>goood trainer</h3>
+                <h3>It was a good opportunity to participate in this beautiful edifice</h3>
               </div>
             </div>
           </div>
@@ -482,17 +474,17 @@
                 <i class="fa-regular fa-circle-user"></i>
                 <h2>karim kashkoush</h2>
               </div>
-              <h3>gooood</h3>
+              <h3>I got an unexpected change</h3>
             </div>
           </div>
           <div class="carousel-item">
             <div class="text">
               <div class="user">
                 <i class="fa-regular fa-circle-user"></i>
-                <h2>ahmed ali</h2>
+                <h2>ِadm ahmed</h2>
               </div>
               <div class="text">
-                <h3>goood trainer</h3>
+                <h3>Great coach</h3>
               </div>
             </div>
           </div>
@@ -511,45 +503,52 @@
   <!-- feed back -->
   <!-- contact -->
   <div class="contact" id="contact">
-    <div class="container" id="contact">
+    <div class="container">
       <div class="heading-div">
         <h2>contact</h2>
       </div>
-      <div class="social">
-        <ul>
-          <li>
-            <a href="http://wa.me/+201012123720" target="_blank">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/sherif.abdelbaeth.9" target="_blank">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/sherif_abdelbaeth/" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="form">
-        <form>
-          <div class="name">
-            <input type="text" placeholder="enter your name">
+      <div class="contact-contact">
+        <div class="form">
+          <div class="social">
+            <ul>
+              <li>
+                <a href="http://wa.me/+201012123720" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/sherif.abdelbaeth.9" target="_blank">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sherif_abdelbaeth/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="number">
-            <input type="tel" placeholder="enter your whatsapp number">
+          <div class="form">
+            <form>
+              <div class="name">
+                <input type="text" placeholder="enter your name">
+              </div>
+              <div class="number">
+                <input type="tel" placeholder="enter your whatsapp number">
+              </div>
+              <div class="email">
+                <input type="email" placeholder="enter your email">
+              </div>
+              <div class="message">
+                <textarea placeholder="enter your message"></textarea>
+              </div>
+              <input type="submit" value="Send">
+            </form>
           </div>
-          <div class="email">
-            <input type="email" placeholder="enter your email">
-          </div>
-          <div class="message">
-            <textarea placeholder="enter your message"></textarea>
-          </div>
-          <input type="submit" value="Send">
-        </form>
+        </div>
+        <div class="image">
+          <img src="images/IMG_4755.JPG" alt="">
+        </div>
       </div>
     </div class="container">
   </div>
